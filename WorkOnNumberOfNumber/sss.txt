@@ -1,0 +1,32 @@
+using System;
+using System.ComponentModel;
+using System.Reflection.Metadata.Ecma335;
+using System;
+
+namespace Task3
+{
+    internal class Program
+    { 
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter the number: ");
+            int.TryParse(Console.ReadLine(), out int number);
+            FirstNumber(number);
+        }
+
+
+        static void FirstNumber(int number)
+        {
+            //int testNumber = number;
+            //int a = 0;
+            //int sum = 0;
+            //int opposite = 0;
+            while (number > 0)
+            {
+                //a = number % 10;
+                //opposite = opposite * 10 + a;
+                //sum += a;
+                number = number / 10;
+            }
+    }
+}
